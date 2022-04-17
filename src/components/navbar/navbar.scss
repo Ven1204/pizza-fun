@@ -1,0 +1,41 @@
+.nav-bar{
+  background: #ee202c;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container {
+  z-index: 2;
+  .logo{
+    border-radius: 75%;
+    height: 18vh;
+    width: 24vh;
+  }
+}
+
+
+.cart-link{
+  padding: 4vh 6vh 0 0;
+  color: whitesmoke;
+  h2{
+    font-weight: 600;
+  }
+}
+
+.product-list-container{
+  height: 90vh;
+  width: 40vh;
+  background-color: #024a00;
+  display: inline-grid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 0 0;
+  .list{
+    color: whitesmoke;
+    font-size: 7vh;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

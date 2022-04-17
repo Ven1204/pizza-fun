@@ -1,17 +1,58 @@
 .x-container{
-  background: red;
-  height: 80vh;
-  position: relative;
-}
-
-.landing-container{
-  background: blue;
-  height: 50vh;
   position: absolute;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.container-y{
+  background-color: black;
+  display: flex;
+  height: 100vh;
+  width: auto;
+  transform: translateY( -100%);
+  opacity: 0.5;
+  transition-duration: 0.3s;
+  // z-index: 999;
+
 }
 
-.home-btn{
-  position: relative;
-  top: 80vh;
-  left: 47.5%;
+.red{
+  background-color: red;
+  z-index: 999;
+}
+.green{
+  background-color: green;
+  z-index: 999;
+}
+.white{
+  background-color: white;
+  z-index: 999;
+}
+
+.btn-cnt{
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  box-sizing: content-box;
+  .btn-x{
+    position: relative;
+    width: 26vh;
+    pointer-events: all;
+  }
+}
+
+
+// to show the BG
+.active-menu{
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+////////////////////
+
+.home{
+  // background-color: black;
+  top: 0;
+  z-index: 1;
 }

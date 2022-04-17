@@ -1,13 +1,19 @@
 import React from 'react';
 import './navbar.scss';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
+
+
   return (
     <>
       <div className='nav-bar'>
         {/* logo */}
         <div className='logo-container'>
-          <img className='logo' src="https://www.creativefabrica.com/wp-content/uploads/2021/01/09/Pizza-logo-design-Graphics-7663620-1-1-580x386.jpg" alt="" />
+          <Link to="/">
+            <img className='logo' src="https://www.creativefabrica.com/wp-content/uploads/2021/01/09/Pizza-logo-design-Graphics-7663620-1-1-580x386.jpg" alt="" />
+          </Link>
+
         </div>
 
         {/* cart section */}
@@ -19,10 +25,10 @@ function Navbar() {
 
       {/* list */}
       <div className='product-list-container'>
-        <a className="list" href="#">All</a>
-        <a className="list" href="#">Classic</a>
-        <a className="list" href="#">Deluxe</a>
-        <a className="list" href="#">Supreme</a>
+        <Link to="/Classic-Pizzas" className='list'>Classic</Link>
+        <Link to="/Deluxe-Pizzas" className='list'>Deluxe</Link>
+        <Link to="/Supreme-Pizzas" className='list'>Supreme</Link>
+        <Link to="/All-Products" className='list'>All Products</Link>
       </div>
     </>
   );

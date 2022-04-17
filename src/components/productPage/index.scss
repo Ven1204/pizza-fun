@@ -1,0 +1,54 @@
+.all-container{
+  display: flex;
+  pointer-events: none;
+}
+
+.product-container{
+  top: 12%;
+  position: fixed;
+  width: auto;
+  right: 0%;
+    text-decoration: none;
+}
+
+.card-container{
+  position: relative;
+  position: relative;
+  width: 70%;
+  left: 42vh;
+}
+
+// home page cards
+.cards{
+  display: flex;
+  margin: 2vh 0 2vh 0;
+  box-shadow: 10px 5px 5px #202124;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  opacity: 0.7;
+  pointer-events: all;
+  transition: transform .2s;
+
+  img{
+    height: 26vh;
+    width: 40vh;
+  }
+  .parag{
+    padding: 0 6vh 0 6vh;
+    font-size: 2vh;
+    font-family: cursive,
+    cursive;
+    text-align: justify;
+  }
+  .heading{
+    padding: 2px 0 2px 6vh;
+    font-weight: 600;
+  }
+}
+
+.cards:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+//

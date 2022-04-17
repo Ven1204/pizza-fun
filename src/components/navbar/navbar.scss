@@ -10,6 +10,7 @@
     border-radius: 75%;
     height: 18vh;
     width: 24vh;
+    margin: 0px 0 0 8px;
   }
 }
 
@@ -23,19 +24,30 @@
 }
 
 .product-list-container{
-  height: 90vh;
+  height: 70vh;
   width: 40vh;
   background-color: #024a00;
   display: inline-grid;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 10vh 0 0 0;
+  border-bottom-right-radius: 8px;
+
   .list{
     color: whitesmoke;
     font-size: 7vh;
     text-decoration: none;
     cursor: pointer;
+    padding: 0 0 0 3vh;
+    opacity: 0.8;
   }
+}
+
+.list:focus{
+  background-color: #ee202c;
+  transition-duration: 0.3s;
+}
+.list:hover{
+  transform: scaleY(1.1);
+  opacity: 1;
 }

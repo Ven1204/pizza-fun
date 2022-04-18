@@ -1,34 +1,39 @@
-6, 13, 15
-{"pizza" : [
+{
+  "pizza" : [
   {
+    "id": 1,
     "image": "https://chailatte.ie/wp-content/uploads/2020/08/Margherita-Pizza-600x344.jpg",
     "name": "Margherita",
     "Ingredients": ["Basil", "Mozarella", "Tomatoes", "Olive oil"],
     "price": "€10 - €15",
     "type": "classic"
   },
-    {
+  {
+      "id": 2,
     "image": "https://www.periodistadigital.com/wp-content/uploads/2021/09/pizza-melanzane-mercadona-1.jpg",
     "name": "Melanzane",
     "Ingredients": ["Eggplant", "Mozarella", "Tomatoes", "Grana padano cheese", "Arugula"],
     "price": "€10 - €15",
     "type": "classic"
-  }
-    {
+  },
+  {
+      "id": 3,
     "image": "https://www.italienische-rezepte.net/wp-content/uploads/2020/11/pizza-marinara.jpg",
     "name": "Marinara",
     "Ingredients": ["Oregano", "Garlic", "Tomatoes", "Olive oil"],
     "price": "€10 - €15",
     "type": "classic"
   },
-    {
+  {
+      "id": 4,
     "image": "https://cdn.tasteatlas.com//images/dishes/67a1f8a12ae9474194265ea5217e9b0b.jpg?w=905&h=510",
     "name": "Boscaiola",
     "Ingredients": ["Sausage", "Mozarella", "Tomatoes", "Champignon mushroom"],
     "price": "€10 - €15",
     "type": "classic"
   },
-    {
+  {
+      "id": 5,
     "image": "https://cdn.tasteatlas.com//images/dishes/2eb7aad01de840628a7f703e4ecb0bac.jpg",
     "name": "Prosciutto e funghi",
     "Ingredients": ["Prosciutto", "Mozarella", "Tomatoes","Mushroom"],
@@ -36,6 +41,7 @@
     "type": "classic"
   },
   {
+    "id": 6,
     "image": "https://cdn.tasteatlas.com//Images/Dishes/6270f4b8af884697b0968d4566e21480.jpg",
     "name": "Pesto Genovese",
     "Ingredients": ["Pesto", "Mozarella di Bufala", "Olive oil"],
@@ -43,13 +49,15 @@
     "type": "classic"
   },
   {
+    "id": 7,
     "image": "https://cdn.tasteatlas.com//images/dishes/6c6690413c134dc18c3d7b38991f7aaf.jpg",
     "name": "Carbonara",
     "Ingredients": ["Tomatoes", "Mozarella", "Pancetta", "Pecorino Romano", "Egg"],
     "price": "€13 - €18",
     "type": "Deluxe"
   },
-    {
+  {
+      "id": 8,
     "image": "https://cdn.tasteatlas.com//images/dishes/b44b470fae3648d0bffd06aa9e7b782c.jpg",
     "name": "Vegetariana",
     "Ingredients": ["Tomatoes", "Mozarella", "Peppers", "Zucchini", "Eggplant", "Olive oil"],
@@ -57,6 +65,7 @@
     "type": "Deluxe"
   },
   {
+    "id": 9,
     "image": "https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/03/d2-300x200.jpg",
     "name": "Alla Diavola",
     "Ingredients": ["Tomatoes", "Mozarella", "Hot chili peppers", "Spicy salami", "Olives"],
@@ -64,6 +73,7 @@
     "type": "Deluxe"
   },
   {
+    "id": 10,
     "image": "https://cdn.tasteatlas.com/images/dishes/06fb0374204f4cf1bc636a4deb517976.jpg",
     "name": "Tonno e Cipolla",
     "Ingredients": ["Tomatoes", "Mozarella", "Preserved Tuna", "Onion", "Oregano", "Capers"],
@@ -71,6 +81,7 @@
     "type": "Deluxe"
   },
   {
+    "id": 11,
     "image": "https://cdn.tasteatlas.com//images/dishes/1596b88a2bf643c6b6e15f648c7ce231.jpg",
     "name": "Quattro Stagioni",
     "Ingredients": ["Tomatoes", "Mozarella", "Champignon mushroom", "Artichoke", "Olives", "Porsciutto  cotto"],
@@ -78,6 +89,7 @@
     "type": "Deluxe"
   },
   {
+    "id": 12,
     "image": "https://foodlocate.com/storage/media/dishes_main/2220568/conversions/dish_thumbnail.jpg",
     "name": "Quattro Formaggi",
     "Ingredients": ["Tomatoes", "Mozarella", "Gorgonzola", "Parmesano", "Goat cheese"],
@@ -85,6 +97,7 @@
     "type": "Deluxe"
   },
   {
+    "id": 13,
     "image": "https://cdn.tasteatlas.com//images/dishes/2475b8aa94c1463dbe9dc17e0f38a063.jpg",
     "name": "Ai Frutti Di Mare",
     "Ingredients": ["Tomatoes", "Mozarella", "Squid", "Mussels", "Shrimp"],
@@ -92,6 +105,7 @@
     "type": "Supreme"
   },
   {
+    "id": 14,
     "image": "https://cdn.tasteatlas.com//images/dishes/6b28b438a3b64a7e9fca9081c89f07ff.jpg",
     "name": "Capricciosa",
     "Ingredients": ["Tomatoes", "Mozarella", "Porsciutto cotto", "Artichoke", "Olives", "Champignon mushroom"],
@@ -99,6 +113,7 @@
     "type": "Supreme"
   },
   {
+    "id": 15,
     "image": "https://www.moncloa.com/wp-content/webpc-passthru.php?src=https://www.moncloa.com/wp-content/uploads/2021/04/ingredientes-cremozza-bbq.jpg&nocache=1",
     "name": "Cremosa Barbacoa",
     "Ingredients": ["Tomatoes", "Mozarella", "Porsciutto cotto", "Bacon", "Barbecue Sauce", "Onion", "Cream Sauce"],
@@ -106,10 +121,11 @@
     "type": "Supreme"
   },
   {
+    "id": 16,
     "image": "https://www.creationsincuisinecatering.com/wp-content/uploads/2020/03/a-la-carte-Meat-Lovers-Pizza.jpg",
     "name": "Meat Lovers",
     "Ingredients": ["Tomatoes", "Mozarella", "Porsciutto cotto", "Bacon", "Ground beef", "Salami Picante"],
     "price": "€15 - €20",
     "type": "Supreme"
-  },
+  }
 ]}

@@ -5,17 +5,23 @@
 
 .product-container{
   top: 12%;
-  position: fixed;
+  position: absolute;
   width: auto;
-  right: 0%;
-    text-decoration: none;
+  // right: 0%;
+  left: 40vh;
+  text-decoration: none;
+  background-color: beige;
+  z-index: 1;
 }
 
 .card-container{
   position: relative;
-  position: relative;
-  width: 70%;
-  left: 42vh;
+  // width: 70%;
+  // left: 42vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10vh 0 0 0;
 }
 
 // home page cards
@@ -29,6 +35,7 @@
   opacity: 0.7;
   pointer-events: all;
   transition: transform .2s;
+  width: 80%;
 
   img{
     height: 26vh;

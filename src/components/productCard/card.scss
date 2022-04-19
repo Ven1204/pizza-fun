@@ -5,7 +5,7 @@
     /* pointer-events: none; */
     /* display: inline-block; */
     background-color: white;
-    margin: 2vh 2vh 2vh 2vh;
+    margin: 2vh 4vh 2vh 6vh;
     border-bottom-right-radius: 43px;
     overflow: hidden;
     box-shadow: 5px 5px 5px #202124;
@@ -17,9 +17,6 @@
 .card-outside-cont:hover{
   transform: scale(1.2);
   z-index: 9;
-}
-::-webkit-scrollbar{
-  background-color: transparent;
 }
 
 .pizza-img-cont{
@@ -47,6 +44,9 @@
     background-color: rgba(243, 243, 243, 0.151);
     border-radius: 4px;
   }
+}
+.scroll-items::-webkit-scrollbar {
+  background-color: transparent;
 }
 
 .info-name-price{

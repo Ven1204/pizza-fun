@@ -14,6 +14,7 @@ function Navbar() {
             <Link to="/">
               <img className='logo' src="https://www.creativefabrica.com/wp-content/uploads/2021/01/09/Pizza-logo-design-Graphics-7663620-1-1-580x386.jpg" alt="" />
             </Link>
+
           </div>
           {/* cart section */}
           <div className='cart-link'>

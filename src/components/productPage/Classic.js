@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import Cards from '../productCard/card';
-// import { getAllPizza } from '../../components/data/data';
+
 
 const Classic = () => {
   const [pizzas, setPizzas] = useState([]);
   const url = 'http://localhost:8000/pizza';
-
+//  fetch api which has a classic type
   useEffect(()=>{
     fetch(url)
       .then(res => {

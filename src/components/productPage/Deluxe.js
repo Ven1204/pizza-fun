@@ -4,7 +4,7 @@ import Cards from '../productCard/card';
 const Deluxe = () => {
  const [pizzas, setPizzas] = useState([]);
   const url = 'http://localhost:8000/pizza';
-
+//  fetch api which has a deluxe type
   useEffect(()=>{
     fetch(url)
       .then(res => {

@@ -12,6 +12,7 @@
   text-decoration: none;
   background-color: beige;
   z-index: 1;
+  padding-bottom: 8vh;
 }
 
 .card-container{
@@ -27,7 +28,7 @@
 // home page cards
 .cards{
   display: flex;
-  margin: 2vh 0 2vh 0;
+  margin: 2vh 0 2vh 18vh;
   box-shadow: 10px 5px 5px #202124;
   border-color: black;
   border-width: 1px;

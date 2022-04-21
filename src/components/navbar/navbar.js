@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './navbar.scss';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-
 
   return (
     <div className="container-navbar">
@@ -17,8 +16,8 @@ function Navbar() {
 
           </div>
           {/* cart section */}
-          <div className='cart-link'>
-            <h2>My Orders</h2>
+          <div className='cart-link-cont'>
+          <Link to="/my-cart" className='cart-link'><h2>My Orders</h2></Link>
           </div>
         </div>
 
@@ -26,8 +25,8 @@ function Navbar() {
         <div className='product-list-container'>
           <Link to="/Classic-Pizzas" className='list'>Classic</Link>
           <Link to="/Deluxe-Pizzas" className='list'>Deluxe</Link>
-          <Link to="/Supreme-Pizzas" className='list'>Supreme</Link>
-          <Link to="/All-Products" className='list'>All Products</Link>
+          <Link to="/Supreme-Pizzas" className='list' >Supreme</Link>
+          <Link to="/All-Products" className='list' >All Products</Link>
         </div>
       </div>
     </div>

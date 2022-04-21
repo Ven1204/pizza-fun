@@ -2,19 +2,16 @@ import React, { useState, useEffect} from 'react';
 import Navbar from '../navbar/navbar';
 import './index.scss';
 import Cards from '../productCard/card';
+import Cart from '../cartPage/cart';
 
-const AllProducts = () => {
+const AllProducts = (pizza, onAdd) => {
   const [pizzas, setPizzas] = useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:8000/pizza')
-      .then(res => {
-        return res.json()
-      })
-      .then(data =>{
-        setPizzas(data);
-      })
-  }, [])
+    setPizzas(pizza.pizza)
+    // console.log(pizza.pizza)
+  })
+  // console.log(pizzas)
 
   return (
     <div>
@@ -22,7 +19,8 @@ const AllProducts = () => {
         <div className='product-container'>
           <div className='card-container'>
               {pizzas && pizzas.map(pizza => {
-                  return <Cards  pizza={pizza}/>}
+                return<Cards  pizza={pizza} onAdd={onAdd}/>
+              }
               )}
           </div>
         </div>

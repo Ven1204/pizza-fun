@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import './card.scss';
 
 
-function Cards(pizza) {
+function Cards(pizza, onAdd) {
   const [changeIcon, setChangeIcon] = useState(true);
+  // console.log(pizza)
 
   // function that change icon from + to - when toggle
   const handleClick = () =>{
     setChangeIcon(!changeIcon);
+    onAdd();
   }
-  // console.log(pizza)
+
   return (
     <div className='card-outside-cont'>
       <div className="pizza-img-cont">

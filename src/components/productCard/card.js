@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './card.scss';
+// import './card.scss';
 
 
 function Cards(pizza, onAdd) {

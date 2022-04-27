@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import './cart.scss';
+// import './cart.scss';
 
 function Cart(cartList, onAdd, onRemove) {
 

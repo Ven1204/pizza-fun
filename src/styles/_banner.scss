@@ -1,59 +1,56 @@
-.x-container{
+.x-container {
   position: absolute;
   top: 0;
   z-index: 9;
   pointer-events: none;
 }
-.container-y{
+
+.container-y {
   // background-color: black;
   display: flex;
   height: 100vh;
   width: auto;
-  transform: translateY( -100%);
+  transform: translateY(-100%);
   opacity: 0.5;
   transition-duration: 0.4s;
   // z-index: 999;
 
 }
 
-.red{
+.red {
   background-color: red;
   z-index: 999;
 }
-.green{
+
+.green {
   background-color: green;
   z-index: 999;
 }
-.white{
+
+.white {
   background-color: white;
   z-index: 999;
 }
 
-.btn-cnt{
+.btn-cnt {
   position: absolute;
-  bottom: 8%;
+  bottom: 20%;
   width: 100%;
   text-align: center;
   align-self: center;
   box-sizing: content-box;
-  .btn-x{
+
+  .btn-x {
     position: relative;
     width: 26vh;
     pointer-events: all;
     z-index: 9999;
+    box-shadow: 1px 3px 5px black;
   }
 }
 
-
 // to show the BG
-.active-menu{
+.active-menu {
   opacity: 1;
   transform: translate(0%, 0%);
-}
-////////////////////
-
-.home{
-  // background-color: black;
-  top: 0;
-  z-index: 1;
 }

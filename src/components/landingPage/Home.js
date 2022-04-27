@@ -1,13 +1,13 @@
 import React from 'react';
-import Landing from '../landingPage/landing';
-import './index.scss';
+import Banner from '../bannerPage/Banner';
+// import './index.scss';
 import { Link }  from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className='all-container'>
       <div>
-        <Landing />
+        <Banner />
       </div>
 
       <div className='product-container'>

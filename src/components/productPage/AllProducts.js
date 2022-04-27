@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import Navbar from '../navbar/navbar';
-import './index.scss';
+// import './index.scss';
 import Cards from '../productCard/card';
 import Cart from '../cartPage/cart';
 

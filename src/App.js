@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.scss';
+import './styles/index.scss';
 import Cart from './components/cartPage/cart';
 import PageNotFound from './components/404/404';
 import AllProducts from './components/productPage/AllProducts';
@@ -8,7 +8,7 @@ import Classic from './components/productPage/Classic';
 import Deluxe from './components/productPage/Deluxe';
 import Supreme from './components/productPage/Supreme';
 import Navbar  from './components/navbar/navbar';
-import Home from './components/productPage/Home';
+import Home from './components/landingPage/Home';
 
 function App() {
   const [pizzas, setPizzas] = useState([]);

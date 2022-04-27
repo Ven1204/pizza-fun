@@ -21,7 +21,7 @@ const Deluxe = (pizza) => {
         <div className='product-container'>
           <div className='card-container'>
               {deluxePizzas && deluxePizzas.map(pizza => {
-                  return <Cards  pizza={pizza}/>}
+                  return <Cards key={pizza.id} pizza={pizza}/>}
               )}
           </div>
         </div>

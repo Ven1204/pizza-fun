@@ -13,15 +13,33 @@ import NavbarList from './components/navbar/navbarList';
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
-  const [cartList, setCartList] = useState([]);
-  const onAdd = (product) =>{
-    const exist = cartList.find(x => x.id === product.id);
-    if(exist){
-      setCartList(cartList.map(x => x.id === product.id? {...exist, qty: exist.qty + 1} : x));
+  const [cartItems, setCartItems] = useState([]);
+
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
     } else {
-      setCartList([...cartList, {...product, qty: 1}])
+      setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
-  }
+  };
+
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+        )
+      );
+    }
+  };
 
   // fetch data from the api
   useEffect(()=>{
@@ -42,10 +60,10 @@ function App() {
         {/* <Route path="/" element={<Landing/>}/> */}
         <Route path="/" element={<Home/>}/>
         <Route path="All-Products" element={<AllProducts pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="Classic-Pizzas" element={<Classic pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="Deluxe-Pizzas" element={<Deluxe pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="Supreme-Pizzas" element={<Supreme pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="/my-cart" element={<Cart cartList={cartList} onAdd={onAdd}/>}/>
+        {/* <Route path="Classic-Pizzas" element={<Classic key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/>
+        <Route path="Deluxe-Pizzas" element={<Deluxe key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/>
+        <Route path="Supreme-Pizzas" element={<Supreme key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/> */}
+        <Route path="/my-cart" element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>}/>
         <Route path="*"element={<PageNotFound/>}/>
       </Routes>
     </div>

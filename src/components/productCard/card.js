@@ -2,31 +2,32 @@ import React, {useState} from 'react';
 // import './card.scss';
 
 
-function Cards(pizza, onAdd) {
+function Cards(props) {
+  const {pizza, onAdd} = props
   const [changeIcon, setChangeIcon] = useState(true);
-  // console.log(pizza)
+
 
   // function that change icon from + to - when toggle
   const handleClick = () =>{
     setChangeIcon(!changeIcon);
-    onAdd();
+    onAdd(pizza);
   }
 
   return (
     <div className='card-outside-cont'>
       <div className="pizza-img-cont">
-        <img src={pizza.pizza.image} alt="" />
+        <img src={pizza.image} alt="" />
       </div>
 
       <div className="info-name-price">
-        <h2 className='h2-name'>Pizza {pizza.pizza.name}</h2>
-        <h4 className='h4-price'>price: {pizza.pizza.price}</h4>
+        <h2 className='h2-name'>Pizza {pizza.name}</h2>
+        <h4 className='h4-price'>price: €{pizza.price}</h4>
       </div>
 
       <div className='card-info-cont'>
         <p>Toppings:</p>
         <ul className='scroll-items'>
-          {pizza.pizza.Ingredients.map((item)=>
+          {pizza.Ingredients.map((item, key)=>
             <li>{item}</li>
           )}
         </ul>

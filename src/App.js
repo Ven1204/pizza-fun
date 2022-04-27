@@ -15,6 +15,7 @@ function App() {
   const [pizzas, setPizzas] = useState([]);
   const [cartItems, setCartItems] = useState([]);
 
+  // to add items on cart
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist) {
@@ -28,6 +29,7 @@ function App() {
     }
   };
 
+  // to remove items from cart
   const onRemove = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist.qty === 1) {
@@ -57,14 +59,54 @@ function App() {
       <Navbar />
       <NavbarList />
       <Routes>
-        {/* <Route path="/" element={<Landing/>}/> */}
-        <Route path="/" element={<Home/>}/>
-        <Route path="All-Products" element={<AllProducts pizza={pizzas} onAdd={onAdd}/>}/>
-        {/* <Route path="Classic-Pizzas" element={<Classic key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="Deluxe-Pizzas" element={<Deluxe key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/>
-        <Route path="Supreme-Pizzas" element={<Supreme key={pizzas} pizza={pizzas} onAdd={onAdd}/>}/> */}
-        <Route path="/my-cart" element={<Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>}/>
-        <Route path="*"element={<PageNotFound/>}/>
+        {/* to homepage */}
+        <Route path="/" element={
+          <Home/>
+        }/>
+        {/* to all products page */}
+        <Route path="All-Products" element={
+          <AllProducts
+            pizza={pizzas}
+            onAdd={onAdd}
+          />
+        }/>
+        {/* to classic page */}
+        <Route path="Classic-Pizzas" element={
+          <Classic
+            key={pizzas}
+            pizza={pizzas}
+            onAdd={onAdd}
+          />
+        }/>
+        {/* to deluxe page */}
+        <Route path="Deluxe-Pizzas" element={
+          <Deluxe
+            key={pizzas}
+            pizza={pizzas}
+            onAdd={onAdd}
+          />
+        }/>
+        {/* to supreme page */}
+        <Route path="Supreme-Pizzas" element={
+          <Supreme
+            key={pizzas}
+            pizza={pizzas}
+            onAdd={onAdd}
+          />
+        }/>
+        {/* to cart page */}
+        <Route path="/my-cart" element={
+          <Cart
+            cartItems={cartItems}
+            onAdd={onAdd}
+            onRemove={onRemove}
+          />
+        }/>
+        {/* 404 page */}
+        <Route path="*"element={
+          <PageNotFound/>
+        }/>
+
       </Routes>
     </div>
   );

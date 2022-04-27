@@ -21,50 +21,56 @@ function Cart(props) {
       <h1>cart Items</h1>
       {cartItems.length === 0 && <div>Cart is Empty</div> }
       {cartItems.map((item) =>{
-        <div key={item.id}  className="row">
-          <div className='col-2'>{item.name}</div>
-          <div className='col-2'>
-            <button onClick={() => onAdd(item)} className="add" > + </button>
-            <button onClick={() => onRemove(item)} className="remove" > - </button>
+        return(
+          <div key={item.id}  className="pizza-name-cont">
+            <div className='cart-item-name'>Pizza {item.name} </div>
+            <div className='add-remove'>
+              <button onClick={() => onRemove(item)} className="remove" > <i class="fa-solid fa-minus"></i> </button>
+              <button onClick={() => onAdd(item)} className="add" > <i class="fa-solid fa-plus"></i> </button>
+            </div>
+            <div className='price-per-item'>
+              {item.qty} x €{item.price}
+            </div>
           </div>
-          <div className='col-2 text-right'>
-            {item.qty} x €{item.price}
-          </div>
-        </div>
+        )
       })}
 
 
     {/* //////// */}
            {cartItems.length !== 0 && (
           <>
-            <hr></hr>
-            <div className="row">
-              <div className="col-2">Items Price</div>
-              <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
-            </div>
-            <div className="row">
-              <div className="col-2">Tax Price</div>
-              <div className="col-1 text-right">€{taxPrice.toFixed(2)}</div>
-            </div>
-            <div className="row">
-              <div className="col-2">Shipping Price</div>
-              <div className="col-1 text-right">
-                €{shippingPrice.toFixed(2)}
+            <hr/>
+            <div className='cart-inner-container'>
+              <div className="item-price-container">
+                <div className="price">Items Price</div>
+                <div className=" price-qty">${itemsPrice.toFixed(2)}</div>
+              </div>
+              <div className="tax-price-container">
+                <div className="tax">Tax Price:</div>
+                <div className="tax-qty">€{taxPrice.toFixed(2)}</div>
+              </div>
+              <div className="delivery-price-container">
+                <div className="delivery">Delivery Price</div>
+                <div className="delivery-qty">
+                  €{shippingPrice.toFixed(2)}
+                </div>
+              </div>
+              <div className="total-price-container">
+                <div className="total">
+                  <strong>Total Price: </strong>
+                </div>
+                <div className="total-qty">
+                  <strong>€{totalPrice.toFixed(2)}</strong>
+                </div>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-2">
-                <strong>Total Price</strong>
-              </div>
-              <div className="col-1 text-right">
-                <strong>${totalPrice.toFixed(2)}</strong>
-              </div>
-            </div>
+
+
             <hr />
-            <div className="row">
+            <div className="checkout-cont">
               <Link to="/">
-                <button onClick={handleCheckout}>
+                <button className='checkout-btn' onClick={handleCheckout}>
                   Checkout
                 </button>
               </Link>

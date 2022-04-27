@@ -35,7 +35,8 @@ function Cards(props) {
 
       {/* onclick event that change icon from + to - when toggle (add to cart / remove from cart) */}
       <div onClick={handleClick} className='icon-cont'>
-        <i className={changeIcon?`fa-regular ${'fa-square-plus'} fa-2x` : `fa-regular ${'fa-square-minus'} fa-2x` }></i>
+        {/* <i className={changeIcon?`fa-regular ${'fa-square-plus'} fa-2x` : `fa-regular ${'fa-square-minus'} fa-2x` }></i> */}
+        add to cart
       </div>
 
     </div>

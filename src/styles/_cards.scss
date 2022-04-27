@@ -15,10 +15,13 @@
 .card-outside-cont:hover{
   transform: scale(1.2);
   z-index: 9;
+  // transition: opacity 3s ease-in-out;
   .icon-cont{
     display: block;
     opacity: 1;
     transition: opacity 3s ease-in-out;
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
 }
 
@@ -74,25 +77,38 @@
 }
 
 .icon-cont{
-  // background-color: greenyellow;
   position: absolute;
-  top: 52vh;
-  height: 5vh;
-  width: 5vh;
-  right: 3vh;
-  transition: opacity 2s ease-in-out;
+  top: 47vh;
+  height: 16vh;
+  width: 14vh;
+  right: 0;
+  // transition: opacity 5s ease-in-out;
+  font-size: 20px;
+  font-family: serif;
+  align-items: center;
+  text-align: center;
+  background: bisque;
+  border-top-left-radius: 12px;
+  padding-top: 4px;
+  box-shadow: -2px -2px 5px red;
   display: none;
-  opacity: 0;
+  opacity: 1;
+  cursor: pointer;
+
+    transform: translateY(-100%);
+    transform: translateX(-100%);
+    opacity: 0.5;
+    transition-duration: 2s;
 }
 
-.icon-cont-minus{
-  // background-color: greenyellow;
-  position: absolute;
-  top: 52vh;
-  height: 5vh;
-  width: 5vh;
-  right: 3vh;
-  transition: opacity 2s ease-in-out;
-  display: none;
-  opacity: 0;
-}
+// .icon-cont-minus{
+//   // background-color: greenyellow;
+//   position: absolute;
+//   top: 52vh;
+//   height: 5vh;
+//   width: 5vh;
+//   right: 3vh;
+//   transition: opacity 2s ease-in-out;
+//   display: none;
+//   opacity: 0;
+// }

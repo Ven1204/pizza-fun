@@ -1,5 +1,81 @@
 .cart-container{
-  position: absolute;
-  top: 22vh;
-  left: 48vh;
+  margin: 2vh 4vh 2vh 4vh;
+}
+
+.cart-inner-container{
+  display: grid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item-price-container{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.tax-price-container{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.delivery-price-container{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.total-price-container{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.pizza-name-cont{
+  align-items: center;
+  display: block;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+
+  .add-remove{
+    padding: 0 1vh 0 1vh;
+    .remove{
+      margin: 0 1vh 0 1vh;
+      border-radius: 4px;
+      font-weight: 700;
+      align-items: center;
+      text-align: center;
+      border-color: darkred;
+      background: linear-gradient(45deg, #ee202c, transparent);
+      box-shadow: 1px 1px 3px;
+    }
+
+    .add{
+      margin: 0 1vh 0 1vh;
+      border-radius: 4px;
+      font-weight: 700;
+      align-items: center;
+      text-align: center;
+      border-color: darkgreen;
+      background: linear-gradient(45deg, #024a00, transparent);
+      box-shadow: 1px 1px 3px;
+    }
+  }
+
+  .price-per-item{
+    font-family: serif;
+    font-size: 20px;
+  }
+
+  .cart-item-name{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.checkout-cont{
+  .checkout-btn{
+    background: linear-gradient(45deg, blue, transparent);
+    width: 28vw;
+    height: 8vh;
+    border-color: darkblue;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px;
+  }
 }

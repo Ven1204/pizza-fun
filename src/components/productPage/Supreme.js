@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import Cards from '../productCard/card';
 
-const Supreme = (pizza) => {
+const Supreme = (props) => {
+  const {pizza, onAdd} = props
   const [supremePizzas, setSupremePizzas] = useState([]);
 
 //  filter api which has a supreme type
   useEffect(()=>{
     const supreme = [];
-    pizza.pizza.filter( pizza =>{
+    pizza.filter( pizza =>{
       if(pizza.type=== "Supreme")  {
         supreme.push(pizza)
       }
@@ -21,7 +22,7 @@ const Supreme = (pizza) => {
         <div className='product-container'>
           <div className='card-container'>
               {supremePizzas && supremePizzas.map(pizza => {
-                  return <Cards key={pizza.id} pizza={pizza}/>}
+                  return <Cards key={pizza.id} pizza={pizza} onAdd={onAdd}/>}
               )}
           </div>
         </div>

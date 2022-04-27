@@ -42,15 +42,16 @@
   .cart-link{
     padding: 4vh 6vh 0 0;
     color: whitesmoke;
-    opacity: 0.8;
+    opacity: 0.9;
     text-decoration: none;
   }
   h2{
     font-weight: 600;
-    text-shadow: 2px 1px 3px;
+
     cursor: pointer;
   }
 }
 .cart-link-cont:hover{
   opacity: 1;
+  text-shadow: 1px 1px 3px;
 }

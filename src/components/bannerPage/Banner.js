@@ -1,21 +1,18 @@
 import React, {useState} from 'react';
-// import './landing.scss';
-import { Link } from 'react-router-dom';
-import Navbar from '../navbar/navbar';
 
 function Landing() {
-  const [showBg, setShowBg] = useState(true);
+  const [showHome, setShowHome] = useState(true);
 
 
   const handleClick = () => {
-    setShowBg(!showBg);
+    setShowHome(!showHome);
   }
 
   return (
     <>
     {/* banner section italian flag*/}
       <div className='x-container container-fluid mx-0 p-0'>
-        <div className={`container-y container-fluid col-12 m-0 p-0 ${showBg? 'active-menu' : null}`} >
+        <div className={`container-y container-fluid col-12 m-0 p-0 ${showHome? 'active-menu' : null}`} >
           <>
             <div className="green col col-4">this is green</div>
             <div className="white col col-4">this is white</div>

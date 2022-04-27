@@ -6,7 +6,6 @@ function Navbar() {
 
   return (
     <div className="container-navbar">
-      <div className='navbar-cont'>
         <div className='nav-bar'>
           {/* logo */}
           <div className='logo-container'>
@@ -20,15 +19,6 @@ function Navbar() {
           <Link to="/my-cart" className='cart-link'><h2>My Orders</h2></Link>
           </div>
         </div>
-
-        {/* list */}
-        {/* <div className='product-list-container'>
-          <Link to="/Classic-Pizzas" className='list'>Classic</Link>
-          <Link to="/Deluxe-Pizzas" className='list'>Deluxe</Link>
-          <Link to="/Supreme-Pizzas" className='list' >Supreme</Link>
-          <Link to="/All-Products" className='list' >All Products</Link>
-        </div> */}
-      </div>
     </div>
   );
 }

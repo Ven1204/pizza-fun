@@ -9,6 +9,7 @@ import Deluxe from './components/productPage/Deluxe';
 import Supreme from './components/productPage/Supreme';
 import Navbar  from './components/navbar/navbar';
 import Home from './components/landingPage/Home';
+import NavbarList from './components/navbar/navbarList';
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
@@ -36,6 +37,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <NavbarList />
       <Routes>
         {/* <Route path="/" element={<Landing/>}/> */}
         <Route path="/" element={<Home/>}/>

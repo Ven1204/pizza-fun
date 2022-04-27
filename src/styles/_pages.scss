@@ -1,62 +1,13 @@
-.all-container{
-  display: flex;
-  pointer-events: none;
-}
-
-.product-container{
-  top: 12%;
-  position: absolute;
+.product-container {
+  // position: absolute;
   width: auto;
-  // right: 0%;
-  left: 40vh;
   text-decoration: none;
   background-color: beige;
   z-index: 1;
   padding-bottom: 8vh;
 }
 
-.card-container{
-  position: relative;
-  // width: 70%;
-  // left: 42vh;
-  display: flex;
-  flex-wrap: wrap;
-  // justify-content: space-evenly;
-  padding: 10vh 0 0 0;
+.card-container {
+  padding: 6vh 0 0 0;
+  justify-content: center;
 }
-
-// home page cards
-.cards{
-  display: flex;
-  margin: 2vh 0 2vh 18vh;
-  box-shadow: 10px 5px 5px #202124;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  opacity: 0.7;
-  pointer-events: all;
-  transition: transform .2s;
-  width: 80%;
-
-  img{
-    height: 26vh;
-    width: 40vh;
-  }
-  .parag{
-    padding: 0 6vh 0 6vh;
-    font-size: 2vh;
-    font-family: cursive,
-    cursive;
-    text-align: justify;
-  }
-  .heading{
-    padding: 2px 0 2px 6vh;
-    font-weight: 600;
-  }
-}
-
-.cards:hover{
-  opacity: 1;
-  transform: scale(1.1);
-}
-//

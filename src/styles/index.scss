@@ -1,9 +1,11 @@
-// @import 'navbar';
+@import 'navbar';
 @import 'pages';
 @import 'cards';
 @import 'cart';
 @import 'banner';
-
+@import 'navbarList';
+@import 'home';
 body{
   font-family: 'Beau Rivage','Square Peg';
+  background-color: beige;
 }

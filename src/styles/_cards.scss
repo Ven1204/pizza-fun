@@ -14,14 +14,17 @@
 // animation
 .card-outside-cont:hover{
   transform: scale(1.2);
+  // transition-duration: 1s;
   z-index: 9;
-  // transition: opacity 3s ease-in-out;
   .icon-cont{
     display: block;
     opacity: 1;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2s ease-in-out;
     opacity: 1;
-    transform: translate(0%, 0%);
+    transform: translateX(0%);
+    transform: translateY(0%);
+    transition: ease-in-out 1s;
+
   }
 }
 
@@ -78,27 +81,25 @@
 
 .icon-cont{
   position: absolute;
-  top: 47vh;
-  height: 16vh;
-  width: 14vh;
-  right: 0;
-  // transition: opacity 5s ease-in-out;
+  top: 49vh;
+  height: 10vh;
+  width: 10vh;
+  right: 2vh;
   font-size: 20px;
   font-family: serif;
   align-items: center;
   text-align: center;
-  background: bisque;
-  border-top-left-radius: 12px;
+  background: linear-gradient(314deg, #3f51b5, transparent);
+  border-radius: 50%;
   padding-top: 4px;
-  box-shadow: -2px -2px 5px red;
-  display: none;
-  opacity: 1;
+  box-shadow: 2px 2px 3px #687175;
+  opacity: 0.5;
   cursor: pointer;
-
-    transform: translateY(-100%);
-    transform: translateX(-100%);
-    opacity: 0.5;
-    transition-duration: 2s;
+  transform: translate(125%, 100%);
+  transition-duration: 2s;
+  .icon{
+    padding: 16px 0px 0px 0px;
+  }
 }
 
 // .icon-cont-minus{

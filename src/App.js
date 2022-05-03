@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/index.scss';
 import Cart from './components/cartPage/cart';
@@ -59,6 +59,12 @@ function App() {
       <Navbar />
       <NavbarList />
       <Routes>
+        {/* 404 page */}
+        <Route path="*"element={
+          <PageNotFound/>
+        }/>
+
+
         {/* to homepage */}
         <Route path="/" element={
           <Home/>
@@ -102,12 +108,10 @@ function App() {
             onRemove={onRemove}
           />
         }/>
-        {/* 404 page */}
-        <Route path="*"element={
-          <PageNotFound/>
-        }/>
+
 
       </Routes>
+
     </div>
   );
 }

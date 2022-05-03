@@ -4,9 +4,11 @@
 @import 'cart';
 @import 'navbarList';
 @import 'home';
+@import 'page-not-found';
+
 body{
   font-family: 'Beau Rivage','Square Peg';
-  background-color: beige;
+  background-color: #F6F6F7;
 }
 
 @media (min-width: 401px){
@@ -15,6 +17,7 @@ body{
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
 }
 
 @media (min-width: 1240px) {
@@ -30,4 +33,14 @@ body{
   .cards{
     width: 80%;
   }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+      padding: 20vh 0 0 0;
+      align-self: center;
+
+    }
 }

@@ -5,6 +5,7 @@
 @import 'navbarList';
 @import 'home';
 @import 'page-not-found';
+@import 'modal';
 
 body{
   font-family: 'Beau Rivage','Square Peg';
@@ -35,12 +36,21 @@ body{
   }
 
     svg {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    position: fixed;
+    top: -125px;
+    z-index: 60;
+    padding: 20vh 0 0 0;
+    align-self: center;
+    }
+    .link-cont{
+      z-index: 9999;
       position: absolute;
-      z-index: 10;
-      padding: 20vh 0 0 0;
       align-self: center;
-
+      position: relative;
+      text-align: center;
+      top: 70vh;
     }
 }

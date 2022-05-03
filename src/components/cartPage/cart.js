@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Home from '../landingPage/Home';
+import Modal from '../modal/Modal';
 
 function Cart(props) {
   const {cartItems, onAdd, onRemove} = props;
-  console.log(cartItems)
+  // console.log(cartItems)
+  const [openModal, setOpenModal] = useState(false);
+
 
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
@@ -12,7 +16,9 @@ function Cart(props) {
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
   const handleCheckout = () =>{
-    alert('Implement Checkout!');
+    // window.location.reload();
+    // alert('Implement Checkout!');
+    setOpenModal(!openModal);
   }
 
 
@@ -25,8 +31,8 @@ function Cart(props) {
           <div key={item.id}  className="pizza-name-cont">
             <div className='cart-item-name'>Pizza {item.name} </div>
             <div className='add-remove'>
-              <button onClick={() => onRemove(item)} className="remove" > <i class="fa-solid fa-minus"></i> </button>
-              <button onClick={() => onAdd(item)} className="add" > <i class="fa-solid fa-plus"></i> </button>
+              <button onClick={() => onRemove(item)} className="remove" > <i className="fa-solid fa-minus"></i> </button>
+              <button onClick={() => onAdd(item)} className="add" > <i className="fa-solid fa-plus"></i> </button>
             </div>
             <div className='price-per-item'>
               {item.qty} x €{item.price}
@@ -69,15 +75,18 @@ function Cart(props) {
 
             <hr />
             <div className="checkout-cont">
-              <Link to="/">
+              {/* <Link to="/"> */}
                 <button className='checkout-btn' onClick={handleCheckout}>
                   Checkout
                 </button>
-              </Link>
+              {/* </Link> */}
             </div>
           </>
         )}
+
+        {openModal && <Modal toCloseModal={setOpenModal}/>}
     </div>
+
   );
 }
 

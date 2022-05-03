@@ -1,0 +1,76 @@
+.background-modal{
+  width: 100%;
+  height: 150%;
+  background-color: rgba(200, 200, 200, 0.9);
+  z-index: 888;
+  position: fixed;
+  bottom: -160px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container{
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.header-modal{
+  // background-color: red;
+  text-align: end;
+  .cancel-x{
+    background-color: transparent;
+    border: transparent;
+    color: red;
+
+  }
+}
+
+.title-modal{
+  font-weight: 600;
+}
+
+.body-modal{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 0 12px 0;
+  .fa-solid{
+    color: rgb(255, 204, 0);
+  }
+}
+
+.btn-modal-cont{
+  text-align: center;
+}
+
+.cancel{
+  height: 6vh;
+  width: 12vh;
+  margin: 0 1vh 0 1vh;
+  border-radius: 4px;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  border-color: darkred;
+  background: linear-gradient(45deg, #ee202c, transparent);
+  box-shadow: 1px 1px 3px;
+}
+
+.proceed{
+  height: 6vh;
+  width: 12vh;
+  margin: 0 1vh 0 1vh;
+  border-radius: 4px;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  border-color: darkgreen;
+  background: linear-gradient(45deg, #024a00, transparent);
+  box-shadow: 1px 1px 3px;
+}

@@ -4,13 +4,13 @@ import React, {useState} from 'react';
 
 function Cards(props) {
   const {pizza, onAdd} = props
-  const [changeIcon, setChangeIcon] = useState(true);
+
 
 
   // function that change icon from + to - when toggle
   const handleClick = () =>{
-    setChangeIcon(!changeIcon);
     onAdd(pizza);
+    alert(`Pizza ${pizza.name} is added to your cart`)
   }
 
   return (

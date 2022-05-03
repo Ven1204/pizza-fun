@@ -16,9 +16,9 @@ const Home = () => {
       {/* banner section italian flag*/}
         <div className='x-container container-fluid mx-0 p-0'>
           <div className={`container-y container-fluid col-12 m-0 p-0 ${hideBanner? 'active-menu' : null}`} >
-            <div className="green col col-4">this is green</div>
-            <div className="white col col-4">this is white</div>
-            <div className="red col col-4">this is red</div>
+            <div className="green col col-4"></div>
+            <div className="white col col-4"></div>
+            <div className="red col col-4"></div>
           {/* button to hide banner */}
             <div className="btn-cnt" >
               <button onClick={handleClick} className='btn-x btn btn-success'>Click me!!</button>

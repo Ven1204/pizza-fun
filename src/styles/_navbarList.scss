@@ -8,6 +8,9 @@
   pointer-events: all;
   justify-content: flex-end;
   box-shadow: 1px 0px 6px #024a00;
+  position: fixed;
+  top: 67px;
+  z-index: 50;
 
   .list {
     color: whitesmoke;

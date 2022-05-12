@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Home from '../landingPage/Home';
 
 function Modal({toCloseModal}) {

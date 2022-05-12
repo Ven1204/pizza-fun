@@ -1,8 +1,8 @@
-import React, { useState, useEffect} from 'react';
-import Navbar from '../navbar/navbar';
+import React from 'react';
+// import Navbar from '../navbar/navbar';
 // import './index.scss';
 import Cards from '../productCard/card';
-import Cart from '../cartPage/cart';
+// import Cart from '../cartPage/cart';
 
 const AllProducts = (props) => {
   const {pizza, onAdd} = props

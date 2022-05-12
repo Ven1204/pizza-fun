@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/index.scss';
 import Cart from './components/cartPage/cart';

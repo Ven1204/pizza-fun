@@ -10,7 +10,7 @@ const Classic = (props) => {
   useEffect(()=>{
     const classic = [];
     pizza.filter( pizza =>{
-      if(pizza.type=== "classic")  {
+      if(pizza.type === "classic")  {
         classic.push(pizza)
       }
     })
